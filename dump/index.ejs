@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<h1>products</h1>
+
+
+
+
+<%products.forEach((product)=>{%>
+    <li>
+        <%=product.title%>
+    </li>
+    <%})%>
+        <form action="/addproduct" method="post">
+            <input name="newproduct" type="text" placeholder="name">
+            <button>add</button>
+        </form>
